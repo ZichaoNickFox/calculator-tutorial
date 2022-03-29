@@ -27,6 +27,8 @@ You can run this tutorial by:
 
 4. Navigating to [http://localhost:8000](http://localhost:8000). If you want to run it at a different hostname or port, modify the `config/common/route` configuration file.
 
+Note that this tutorial currently does not work with Firefox ([issue](https://github.com/ghcjs/jsaddle/issues/64)).  It works with Google Chrome.
+
 While `ob run` is running the application, any changes to this source file will cause the code to be reloaded and the application to be restarted. If the changes have introduced any errors or warnings, you'll see those in the `ob run` window. Tinker away!
 
 ### Navigating to particular tutorial snippets
