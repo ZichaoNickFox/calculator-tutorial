@@ -15,7 +15,7 @@ You can run this tutorial by:
 2. Cloning the calculator-tutorial repository.
 
     ```bash
-    git clone git@github.com:obsidiansystems/calculator-tutorial
+    git clone https://github.com/obsidiansystems/calculator-tutorial.git
     ```
 
 3. Running the application with the `ob` command.
