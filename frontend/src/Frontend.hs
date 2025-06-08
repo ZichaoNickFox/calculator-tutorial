@@ -34,7 +34,7 @@ import Obelisk.Route.Frontend (R, subRoute_, routeLink)
 import Reflex.Dom.Core
 import qualified System.IO
 import qualified Text.MMark as MMark
-import qualified Text.MMark.Internal.Type as MMark
+import qualified Text.MMark.Type as MMark
 
 import Common.Route
 import Reflex.MMark.Render

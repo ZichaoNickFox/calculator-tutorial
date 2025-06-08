@@ -12,6 +12,8 @@
 {-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards   #-}
+{-# LANGUAGE FlexibleContexts  #-}
+{-# LANGUAGE TypeFamilies  #-}
 
 module Reflex.MMark.Render
   ( renderReflex
@@ -29,8 +31,8 @@ import qualified Data.Map as M
 import qualified Data.Text as T
 import qualified Text.URI as URI
 import Reflex.Dom hiding (Link)
-import Text.MMark.Internal.Type hiding (Render (..))
-import Text.MMark.Internal.Util
+import Text.MMark.Type hiding (Render (..))
+import Text.MMark.Util
 
 -- | Render a 'MMark' markdown document. You can then render @'Html' ()@ to
 -- various things:

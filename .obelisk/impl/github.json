@@ -1,7 +1,8 @@
 {
   "owner": "obsidiansystems",
   "repo": "obelisk",
-  "branch": "ls-reflex-frp",
-  "rev": "50a5b9e0da7986de0f885575ab302ca05dc793ac",
-  "sha256": "0qx74sl710zd50zgccyn8y4c37d5lj3xhh7ckicjvhy5kbk12bps"
+  "branch": "develop",
+  "rev": "7358cdeffe196b3b221bc506a34321aaef5656b5",
+  "sha256": "1h2N9ttzynEgArOLR4dsunjSOqahea+UnsFoRom1w5E="
 }
+

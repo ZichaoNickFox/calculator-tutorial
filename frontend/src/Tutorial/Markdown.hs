@@ -15,7 +15,7 @@ import Data.Text.Encoding (decodeUtf8)
 import "template-haskell" Language.Haskell.TH
 import "template-haskell" Language.Haskell.TH.Syntax
 import qualified Text.MMark as MMark
-import qualified Text.MMark.Internal.Type as MMark
+import qualified Text.MMark.Type as MMark
 
 parsedMarkdown :: [MMark.Bni]
 parsedMarkdown = $(do
