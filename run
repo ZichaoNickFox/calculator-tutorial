@@ -1,0 +1,2 @@
+nix-env -f ../obelisk -iA command
+ob --no-handoff -v run

@@ -7,3 +7,5 @@ result-exe
 ghcid-output.txt
 .vscode
 static.out
+.DS_Store
+*/.DS_Store

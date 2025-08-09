@@ -1,4 +1,4 @@
-{ obelisk ? import ./.obelisk/impl {
+{ obelisk ? import ../obelisk {
     system = builtins.currentSystem;
     iosSdkVersion = "10.2";
     # You must accept the Android Software Development Kit License Agreement at
@@ -27,5 +27,8 @@ with pkgs.haskell.lib; {
     frontend = overrideCabal super.frontend (drv: {
       buildTools = (drv.buildTools or []) ++ [ self.buildHaskellPackages.markdown-unlit ];
     });
+  };
+  shellToolOverrides = _: _: {
+    ob = command;
   };
 })

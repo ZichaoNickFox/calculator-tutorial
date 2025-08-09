@@ -83,19 +83,19 @@ renderReflex' f md = mapM_ (either f rBlock) md
 frontend :: Frontend (R FrontendRoute)
 frontend = Frontend
   { _frontend_head = do
-    el "title" $ text "Building a Calculator with Reflex"
-    elAttr "meta" ("charset" =: "utf-8") blank
-    let viewportAttrs = mconcat
-          [ "name" =: "viewport"
-          , "content" =: "width=device-width, initial-scale=1, shrink-to-fit=no"
-          ]
-    elAttr "meta" viewportAttrs blank
-    mapM_ (\x -> elAttr "link" ("rel" =: "stylesheet" <> "href" =: x) blank)
-      [ static @"bootstrap.min.css"
-      , static @"highlight/styles/sunburst.css"
-      , static @"calculator/style.css"
-      ]
-    elAttr "script" ("src" =: static @"highlight/highlight.pack.js") blank
+      el "title" $ text "Building a Calculator with Reflex"
+      elAttr "meta" ("charset" =: "utf-8") blank
+      let viewportAttrs = mconcat
+            [ "name" =: "viewport"
+            , "content" =: "width=device-width, initial-scale=1, shrink-to-fit=no"
+            ]
+      elAttr "meta" viewportAttrs blank
+      mapM_ (\x -> elAttr "link" ("rel" =: "stylesheet" <> "href" =: x) blank)
+        [ static @"bootstrap.min.css"
+        , static @"highlight/styles/sunburst.css"
+        , static @"calculator/style.css"
+        ]
+      elAttr "script" ("src" =: static @"highlight/highlight.pack.js") blank
   , _frontend_body = subRoute_ $ \case
       FrontendRoute_Main -> do
         let renderLink rt = el "p" $

@@ -1,0 +1,1 @@
+nix run --impure --expr '(import ./release.nix {}).exe'

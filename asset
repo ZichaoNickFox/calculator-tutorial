@@ -1,0 +1,1 @@
+nix build --impure --expr --verbose '(import ./asset.nix {})'
