@@ -91,11 +91,11 @@ frontend = Frontend
             ]
       elAttr "meta" viewportAttrs blank
       mapM_ (\x -> elAttr "link" ("rel" =: "stylesheet" <> "href" =: x) blank)
-        [ static @"bootstrap.min.css"
-        , static @"highlight/styles/sunburst.css"
-        , static @"calculator/style.css"
+        [ $(static "bootstrap.min.css")
+        , $(static "highlight/styles/sunburst.css")
+        , $(static "calculator/style.css")
         ]
-      elAttr "script" ("src" =: static @"highlight/highlight.pack.js") blank
+      elAttr "script" ("src" =: $(static "highlight/highlight.pack.js")) blank
   , _frontend_body = subRoute_ $ \case
       FrontendRoute_Main -> do
         let renderLink rt = el "p" $
