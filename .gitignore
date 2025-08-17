@@ -9,3 +9,5 @@ ghcid-output.txt
 static.out
 .DS_Store
 */.DS_Store
+default.hoo
+default.warn

@@ -1,1 +1,3 @@
-ob --no-handoff --verbose hoogle
+# nix profile install -f ../obelisk command
+# ob --no-handoff --verbose hoogle
+nix shell -f ../obelisk command -c ob --no-handoff --verbose hoogle

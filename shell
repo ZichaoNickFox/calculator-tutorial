@@ -1,0 +1,1 @@
+nix shell -f ../obelisk command -c ob --no-handoff --verbose shell

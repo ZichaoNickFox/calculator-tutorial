@@ -1,2 +1,2 @@
 nix-env -f ../obelisk -iA command
-ob --no-handoff -v run
+ob --no-handoff --verbose run
